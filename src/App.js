@@ -7,12 +7,14 @@ import Dashboard  from './Components/Dashboard'
 
 
 function App() {
+
+  // Slices up state to account for the informationthat will be asked of the user
   const [formData, setFormData] = useState({
-    fname: '',
-    lName: '',
+    name: '',
     email: '', 
     phone: '', 
   })
+  // for toggling display
   const [show, setShow] = useState(false)
 
   return (

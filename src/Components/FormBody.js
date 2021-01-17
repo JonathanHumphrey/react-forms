@@ -2,6 +2,7 @@ import React from 'react'
 
 export default function FormBody({show, setShow, formData, setFormData}) {
     
+    // On change of the input, the formdata is spread out and then grabs the event name and value corresponding with the name and values of the input tags
     const onChangeHandler = event => {
         setFormData({
             ...formData,
@@ -9,6 +10,7 @@ export default function FormBody({show, setShow, formData, setFormData}) {
         })
     }
 
+    // faux submit that toggles the show value and prevents the default load
     const submitHandler = event => {
         event.preventDefault()
         setShow(!show)
@@ -17,21 +19,11 @@ export default function FormBody({show, setShow, formData, setFormData}) {
         <div className='formBody'>
             <h1>Enter your Information Below</h1>
             <form onSubmit={submitHandler}>
-                <label htmlFor='fName'>First Name: 
+                <label htmlFor='name'>Name: 
                     <input 
                         type='text'
-                        placeholder='Enter Your First Name'
-                        name='fName'
-                        onChange={onChangeHandler}
-                        required
-                    />
-                </label>
-                <br />
-                <label htmlFor='lName'>Last Name: 
-                    <input 
-                        type='text'
-                        placeholder='Enter Your Last Name'
-                        name='lName'
+                        placeholder='Enter Your Name'
+                        name='name'
                         onChange={onChangeHandler}
                         required
                     />

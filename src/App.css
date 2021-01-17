@@ -19,6 +19,10 @@ input {
 	margin: 8px 0;
 	box-sizing: border-box;
 }
+.dashboard {
+}
+.formBody {
+}
 .dashboardContent {
 	width: 50%;
 	margin: 0 auto;
@@ -28,4 +32,8 @@ input {
 }
 button {
 	margin: 5px 5px;
+}
+.editBtn {
+	position: absolute;
+	right: 40%;
 }
