@@ -1,0 +1,31 @@
+html {
+	height: 100%;
+}
+.App {
+	text-align: center;
+}
+
+h1 {
+	text-align: center;
+}
+form {
+	width: 50%;
+	margin: 0 auto;
+	text-align: left;
+}
+input {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+}
+.dashboardContent {
+	width: 50%;
+	margin: 0 auto;
+	border: solid black;
+	margin-bottom: 10px;
+	border-radius: 25px;
+}
+button {
+	margin: 5px 5px;
+}
